@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lemon&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              DM_sans: ["DM Sans", sans - serif],
+            },
+          },
+        },
+      };
+    </script>
+
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .nav-item {
+          @apply cursor-pointer;
+        }
+        .img-group {
+          @apply w-20 h-20 rounded-full object-cover border-4 border-white shadow-lg;
+        }
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <div
+        class="container w-[1920px] relative mx-auto h-[1010px] bg-[url('/Images/BG.png')] bg-cover"
+      >
+        <header>
+          <div class="w-[1350px] flex justify-between items-center mx-auto">
+            <div class="w-[920px] flex justify-between items-center py-5">
+              <div class="flex justify-between items-center">
+                <img class="w-[27px] h-[37px]" src="Images/S 1.png" alt="" />
+                <p class="font-normal ml-4">StartupLanding</p>
+              </div>
+              <div class="w-[480px]">
+                <nav>
+                  <ul class="flex justify-between items-center">
+                    <li class="nav-item">Home</li>
+                    <li class="nav-item">Advertise</li>
+                    <li class="nav-item">Supports</li>
+                    <li class="nav-item">Contact</li>
+                    <li class="nav-item">About Us</li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div>
+              <button
+                class="bg-[#8D448B] text-[#FFFFFF] py-2 px-3 font-normal rounded"
+              >
+                Join us now
+              </button>
+            </div>
+          </div>
+        </header>
+        <div
+          class="w-[600px] h-[630px] absolute left-[84px] top-40 px-[60px] py-[80px] bg-[#FFFFFF]"
+        >
+          <h1 class="text-5xl font-medium leading-normal font-MD_sans">
+            Coworking space that will feel like home.
+          </h1>
+          <p class="leading-10 text-lg">
+            Whether you’re an established enterprise or a growing startup,
+            discover spaces that inspire which will best your most impactful
+            work.
+          </p>
+          <div
+            class="flex justify-between items-center border-2 p-2 my-5 border-[#8D448B] rounded-md"
+          >
+            <div>
+              <p>find workplace</p>
+              <h3 class="font-medium">Chicago,new work</h3>
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+              />
+            </svg>
+          </div>
+          <button
+            class="w-full py-4 bg-[#8D448B] text-xl text-white rounded-md"
+          >
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </section>
+    <div class="container w-[1920px] mx-auto h-[1010px] bg-[#FFFFFF]">
+      <div
+        class="w-[60%] h-[312px] mx-auto text-center my-[60px] border border-red-300"
+      >
+        <h3 class="text-medium font-normal text-[#8D448B]">Meet our Clients</h3>
+        <h2 class="text-4xl my-3 leading-10 px-[10%]">
+          This guys are using our service and they're more than happier ever.
+        </h2>
+        <div class="flex justify-between items-center">
+          <img
+            class="w-[100px] h-[21px]"
+            src="Images/image 11 (1).png"
+            alt="uber"
+          />
+          <img
+            class="w-[100px] h-[42px]"
+            src="Images/image 12.png"
+            alt="uber"
+          />
+          <img
+            class="w-[100px] h-[42px]"
+            src="Images/image 13.png"
+            alt="uber"
+          />
+          <img
+            class="w-[100px] h-[42px]"
+            src="Images/image 14.png"
+            alt="uber"
+          />
+        </div>
+      </div>
+      <div class="w-[80%] mx-auto my-12 flex justify-between items-center">
+        <div class="w-[47%]">
+          <h2
+            class="text-5xl font-MD_sans leading-[65px] text-[#0F2137] font-normal"
+          >
+            Some good place to where can build your startup business
+          </h2>
+          <p class="text-xl leading-9 py-6 font-MD_sans text-[#343D48]">
+            Coworking offers beautifully crafted workspaces where people can
+            create, connect, and grow their businesses at prime locations in
+            multiple cities.
+          </p>
+          <div class="flex justify-between items-center my-6">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-[41px] h-[35px]"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m20.25 7.5-.625 10.632a2.25 2.25 0 0 1-2.247 2.118H6.622a2.25 2.25 0 0 1-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z"
+                />
+              </svg>
+              <div class="ml-1">
+                <h2 class="my-2 font-medium">100</h2>
+                <p>you will get 1000ft square space facility here.</p>
+              </div>
+            </div>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-[41px] h-[35px]"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M18 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z"
+                />
+              </svg>
+
+              <div class="ml-1">
+                <h2 class="my-2 font-medium">80 Members</h2>
+                <p>you will get advantage to live 80+ member here.</p>
+              </div>
+            </div>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-[41px] h-[35px]"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.288 15.038a5.25 5.25 0 0 1 7.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 0 1 1.06 0Z"
+                />
+              </svg>
+
+              <div class="ml-1">
+                <h2 class="my-2 font-medium">100 Mbps</h2>
+                <p>Internet speed is much better thjan others.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-[47%]">
+          <img src="Images/img 01.png" alt="" />
+        </div>
+      </div>
+      <div class="w-[80%] border mx-auto mt-[60px]">
+        <div class="text-center">
+          <p class="text-[#8D448B] text-xl font-Md_sans font-medium">
+            Working space
+          </p>
+          <h2 class="text-3xl py-8">Let’s meet our interior room decoration</h2>
+        </div>
+        <div class="flex justify-between items-center gap-5">
+          <div class="flex flex-col gap-5">
+            <img src="Images/1.png" alt="" />
+            <img src="Images/4.png" alt="" />
+          </div>
+          <div class="flex flex-col gap-5">
+            <img class="" src="Images/7.png" alt="" />
+            <img src="Images/5.png" alt="" />
+          </div>
+          <div class="flex flex-col gap-5">
+            <img src="Images/3.png" alt="" />
+            <img src="Images/6.png" alt="" />
+          </div>
+        </div>
+        <div class="bg-[#EDF0F2] py-4 text-center mt-5 cursor-pointer">
+          <button class="inline text-black font-normal">Explore More</button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-4 inline"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m8.25 4.5 7.5 7.5-7.5 7.5"
+            />
+          </svg>
+        </div>
+      </div>
+      <section>
+        <div
+          class="container w-[1920px] h-[90%] p-10 mx-auto mt-20 bg-black text-white"
+        >
+          <div class="text-center">
+            <p class="text-[#FFFFFF] font-xl font-medium">Pricing plan</p>
+            <h2 class="text-3xl text-[#FFFFFF] mt-1">
+              What deal suit you perfect
+            </h2>
+            <div class="mx-auto inline-block p-1 my-7 rounded border">
+              <ul class="flex">
+                <li
+                  class="p-2 bg-[#FFFFFF] text-black active:text-block rounded-md cursor-pointer"
+                >
+                  Monthly plan
+                </li>
+                <li
+                  class="ml-3 p-2 active:bg-[#FFFFFF] rounded-md cursor-pointer active:text-black"
+                >
+                  Annually plan
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-[60%] flex gap-6 justify-between items-center mx-auto">
+            <div class="w-[50%] border-2 border-[#020718] rounded">
+              <div class="py-8 px-7">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-[70px] h-[60px]"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+                    />
+                  </svg>
+                  <h2 class="text-2xl font-Md_sans font-medium my-3">
+                    Starter pack
+                  </h2>
+                </div>
+                <div class="flex flex-col">
+                  <div class="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm4.28 10.28a.75.75 0 0 0 0-1.06l-3-3a.75.75 0 1 0-1.06 1.06l1.72 1.72H8.25a.75.75 0 0 0 0 1.5h5.69l-1.72 1.72a.75.75 0 1 0 1.06 1.06l3-3Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <p class="ml-2">
+                      Ultimate access to all course, exercises and assessments
+                    </p>
+                  </div>
+
+                  <div class="flex items-center my-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm4.28 10.28a.75.75 0 0 0 0-1.06l-3-3a.75.75 0 1 0-1.06 1.06l1.72 1.72H8.25a.75.75 0 0 0 0 1.5h5.69l-1.72 1.72a.75.75 0 1 0 1.06 1.06l3-3Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <p class="ml-2">
+                      Free acess for all kind of exercise corrections with
+                      downloads.
+                    </p>
+                  </div>
+                  <div class="flex items-center my-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm4.28 10.28a.75.75 0 0 0 0-1.06l-3-3a.75.75 0 1 0-1.06 1.06l1.72 1.72H8.25a.75.75 0 0 0 0 1.5h5.69l-1.72 1.72a.75.75 0 1 0 1.06 1.06l3-3Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <p class="ml-2">
+                      Total assessment corrections with free download access
+                      system
+                    </p>
+                  </div>
+                  <div class="flex items-center my-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm4.28 10.28a.75.75 0 0 0 0-1.06l-3-3a.75.75 0 1 0-1.06 1.06l1.72 1.72H8.25a.75.75 0 0 0 0 1.5h5.69l-1.72 1.72a.75.75 0 1 0 1.06 1.06l3-3Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <p class="ml-2">
+                      Unlimited download of courses on the mobile app contents
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-between p-8 border-t items-center">
+                <div>
+                  <p class="font-Md_sans">Starting from</p>
+                  <h1 class="text-2xl font-Md_sans font-bold">49.99/mo</h1>
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 font-bold"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="w-[50%] text-black bg-[#FFFFFF] border-3 border-[#020718] rounded"
+            >
+              <div class="py-8 px-7">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-[70px] h-[60px]"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+                    />
+                  </svg>
+                  <h2 class="text-2xl font-Md_sans font-medium my-3">
+                    Starter pack
+                  </h2>
+                </div>
+                <div class="flex flex-col">
+                  <div class="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm4.28 10.28a.75.75 0 0 0 0-1.06l-3-3a.75.75 0 1 0-1.06 1.06l1.72 1.72H8.25a.75.75 0 0 0 0 1.5h5.69l-1.72 1.72a.75.75 0 1 0 1.06 1.06l3-3Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <p class="ml-2">
+                      Ultimate access to all course, exercises and assessments
+                    </p>
+                  </div>
+
+                  <div class="flex items-center my-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm4.28 10.28a.75.75 0 0 0 0-1.06l-3-3a.75.75 0 1 0-1.06 1.06l1.72 1.72H8.25a.75.75 0 0 0 0 1.5h5.69l-1.72 1.72a.75.75 0 1 0 1.06 1.06l3-3Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <p class="ml-2">
+                      Free acess for all kind of exercise corrections with
+                      downloads.
+                    </p>
+                  </div>
+                  <div class="flex items-center my-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm4.28 10.28a.75.75 0 0 0 0-1.06l-3-3a.75.75 0 1 0-1.06 1.06l1.72 1.72H8.25a.75.75 0 0 0 0 1.5h5.69l-1.72 1.72a.75.75 0 1 0 1.06 1.06l3-3Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <p class="ml-2">
+                      Total assessment corrections with free download access
+                      system
+                    </p>
+                  </div>
+                  <div class="flex items-center my-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm4.28 10.28a.75.75 0 0 0 0-1.06l-3-3a.75.75 0 1 0-1.06 1.06l1.72 1.72H8.25a.75.75 0 0 0 0 1.5h5.69l-1.72 1.72a.75.75 0 1 0 1.06 1.06l3-3Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <p class="ml-2">
+                      Unlimited download of courses on the mobile app contents
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-between bg-[#F0F0F5] p-8 items-center">
+                <div>
+                  <p class="font-Md_sans">Starting from</p>
+                  <h1 class="text-2xl font-Md_sans font-bold">49.99/mo</h1>
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 font-bold"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- start -->
+      <section>
+        <div class="container w-[1920px] mx-auto bg-[#FFFFFF]">
+          <div
+            class="pothom w-[60%] my-10 flex px-5 justify-between items-center mx-auto"
+          >
+            <div class="w-[35%%] ml-6 grid grid-cols-3 grid-rows-3 gap-3">
+              <img class="img-group" src="Images/1 (1).png" alt="" />
+              <img class="img-group" src="Images/1 (1).png" alt="" />
+              <img class="img-group" src="Images/1 (1).png" alt="" />
+              <img class="img-group" src="Images/1 (1).png" alt="" />
+              <img class="img-group" src="Images/1 (1).png" alt="" />
+              <img class="img-group" src="Images/1 (1).png" alt="" />
+              <img class="img-group" src="Images/1 (1).png" alt="" />
+            </div>
+
+            <div class="w-[50%]">
+              <h1 class="font-MD_sans text-4xl font-boldleading-normal">
+                We have more than thousand of worldwide happy customer.
+              </h1>
+              <p class="font-MD_sans leading-6 my-4">
+                Coworking offers beautifully crafted workspaces where people can
+                create, connect, and grow their businesses at prime locations in
+                multiple cities.
+              </p>
+              <a class="text-[#8D448B]" href="">Learn more ></a>
+            </div>
+          </div>
+          <div class="w-[75%] my-[100px] mx-auto text-center">
+            <p class="text-[#8D448B]">Blog Post</p>
+            <h2 class="text-2xl font-MD_sans my-4">
+              Popular blog post we update everyday
+            </h2>
+            <div class="flex justify-between items-center gap-3">
+              <div>
+                <img src="Images/image 23.png" alt="" />
+                <p class="text-start font-medium">
+                  How to work with prototype design with adobe xd featuring
+                  tools
+                </p>
+                <div class="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z"
+                    />
+                  </svg>
+                  <p class="ml-2">22 comments</p>
+                </div>
+              </div>
+              <div>
+                <img src="Images/image 23.png" alt="" />
+                <p class="text-start font-medium">
+                  How to work with prototype design with adobe xd featuring
+                  tools
+                </p>
+                <div class="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z"
+                    />
+                  </svg>
+                  <p class="ml-2">22 comments</p>
+                </div>
+              </div>
+              <div>
+                <img src="Images/image 23.png" alt="" />
+                <p class="text-start font-medium">
+                  How to work with prototype design with adobe xd featuring
+                  tools
+                </p>
+                <div class="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z"
+                    />
+                  </svg>
+                  <p class="ml-2">22 comments</p>
+                </div>
+              </div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end -->
+      <!-- start -->
+      <section>
+        <div
+          class="container w-[1920px] mx-auto pb-5 text-center text-white bg-[#020718]"
+        >
+          <h1 class="text-3xl pt-[4%] mt-[90px] font-MD_sans">
+            Subscribe to get best offers.
+          </h1>
+          <p class="my-[15px]">
+            By subscribing with your mail, you will agree with terms
+          </p>
+
+          <div class="w-[50%] flex justify-center items-center mx-auto my-12">
+            <input
+              class="p-3 w-[60%] text-white bg-black font-medium rounded-md"
+              type="text"
+              placeholder="Enter your email"
+            />
+            <button
+              class="w-[20%] p-3 ml-3 bg-[#FFFFFF] text-black font-bold rounded-md"
+            >
+              Subscribe us
+            </button>
+          </div>
+          <div class="flex w-[80%] mx-auto mb-12 justify-between items-center">
+            <div class="flex w-[20%] justify-between items-center">
+              <img class="w-[27px] h-[37px]" src="Images/S 1.png" alt="" />
+              <p>Copyright by 2019 Redq, Inc</p>
+            </div>
+            <div class="w-[40%]">
+              <ul class="flex justify-between items-center">
+                <li><a href="">Home</a></li>
+                <li><a href="">Advertise</a></li>
+                <li><a href="">Support</a></li>
+                <li><a href="">Marketing</a></li>
+                <li><a href="">FAQ</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end -->
+    </div>
+  </body>
+</html>
